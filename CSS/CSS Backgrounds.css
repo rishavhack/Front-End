@@ -1,0 +1,23 @@
+h1
+{
+	background-color: lightblue;
+	background-attachment: fixed;/* To specify that the background image should be fixed (will not scroll with the rest of the page), use the background-attachment property*/
+}
+h2
+{
+	background-image: url("imag.jpg");
+}
+h3
+{
+	background-image: url("imag.jpg")
+	background-repeat:repeat-x;
+}
+h4
+{
+	background-image: url("imag.jpg")
+	background-position :right top;
+}
+h5 /*Shorthand property*/
+{
+	background:#ffffff url("imag.jpg") no-repeat right top;
+}
