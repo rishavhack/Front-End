@@ -1,0 +1,24 @@
+h1
+{
+border-style: inset;
+border-width: 5px;
+}
+h2
+{
+border-style:dotted;
+border-width: 5px;
+border-color: blue;
+}
+h3
+{
+border-top-style: dotted;
+border-width: 5px;
+border-color:green;
+border-bottom-style: dotted;
+border-right-style: double;
+border-left-style:double;
+}
+h4
+{
+border:8px solid red;
+}
