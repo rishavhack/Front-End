@@ -1,0 +1,21 @@
+a:link
+{
+	color: red;
+	text-decoration: none;
+}
+a:visited
+{
+	color:green;
+	text-transform: uppercase;
+}
+a:hover
+{
+	color: brown;
+	text-decoration: underline;
+	background-color: lightgreen;
+}
+a:active
+{
+	color:blue;
+	text-transform: lowercase;
+}
