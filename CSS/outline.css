@@ -1,0 +1,12 @@
+h2
+{
+	border:2px solid black;
+	outline-width:50px;
+	outline-color: red;
+}
+h4
+{
+	outline-style: double;
+	outline-color: blue;
+	outline-width: thick;
+}
