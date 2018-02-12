@@ -1,0 +1,17 @@
+h2
+{
+	position: static;
+	border:2px solid blue;
+}
+h3
+{
+position: relative;
+left: 30px;
+border:2px solid brown;
+}
+div
+{
+	position: fixed;
+	margin: auto;
+	border:3px solid red;
+}
