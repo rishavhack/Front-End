@@ -37,7 +37,7 @@ h1 a
     margin-top: 15px;
     font-weight: bold;
     padding: 4px;
-    background:white url(search.png) right center no-repeat;
+    background:white url(image/search.png) right center no-repeat;
 }
 .submit
 {
@@ -107,4 +107,57 @@ ul
 {
 	font-size: 20px;
 	text-align: justify;
+}
+#leftSideBar
+{
+	float: left;
+}
+#leftSideBar ul li
+{
+	padding-bottom: 2px;
+	list-style-image: url(image/dil.png);
+}
+#rightSidebar
+{
+	float: right;
+}
+#rightSidebar ul li
+{
+	padding-bottom: 15px;
+    padding-left: 40px;
+	background:url(image/arrow.png) no-repeat left center;
+}
+.slideBar
+{
+	width: 500px;
+	border: 2px solid grey;
+	height: 426px;
+	border-radius: 20px;
+	padding: 10px 20px;
+}
+.slideBar h3
+{
+	font-size: 30px;
+	color: purple;
+}
+
+.slideBar ul li a
+{
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+	color: mediumpurple;
+	padding-left: 10px;
+	transition: font-size 0.3s ease;
+	-webkit-transition: font-size 0.3s ease;
+	-moz-transition: font-size 0.3s ease;
+	-o-transition: font-size 0.3s ease;
+	-ms-transition: font-size 0.3s ease;
+}
+.slideBar ul li a:hover,.slideBar ul li a:active
+{
+	text-decoration: none;
+	font-size: 28px;
+	color: blue;
+	font-weight: bold;
 }
