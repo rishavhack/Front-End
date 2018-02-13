@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set Time interval</title>
+</head>
+<body>
+<p id="counter">0</p>
+<button onclick="clearInterval(myCounter)">Stop Time Counter</button>
+<button onclick="clearTimeout(delayMessage)">To stop delay function</button>
+</body>
+<script>
+	var counter = document.getElementById('counter')
+	var x=0;
+	var myCounter = setInterval(function() {
+		x++
+		counter.innerHTML = x
+	},1000)
+
+	var delayMessage=setTimeout(function(){
+		window.alert("Welcome after 3second")
+	},3000);
+</script>
+</html>
