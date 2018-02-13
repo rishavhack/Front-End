@@ -1,0 +1,45 @@
+html
+{
+	background:radial-gradient(circle,#fff,#ccc); 
+}
+#container
+{
+	background-color: #e2ff00;
+    height: 500px;
+    width: 725px;
+    padding: 20px;
+    margin: 100px auto;
+    position: relative;
+}
+#score
+{
+    position: absolute;
+    background: #3bb2ff;
+    padding: 12px;
+    font-size: 17px;
+    color: white;
+    box-shadow: 0px 4px #6d50ff;
+    left: 660px;
+}
+#correct
+{
+	position: absolute;
+	left: 339px;
+    padding: 12px;
+    font-size: 17px;
+    color: white;
+    background: green;
+    box-shadow: 0px 4px #3bffcb;
+    display: none;
+}
+#wrong
+{
+	position: absolute;
+	left: 339px;
+    padding: 12px;
+    font-size: 17px;
+    color: white;
+    background: red;
+    box-shadow: 0px 4px #3b59ff;
+    display: none;
+}
