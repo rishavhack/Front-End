@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Element</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0">
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+<h1 style="width: 600px;height: 100px;background-color: blue;color: white;text-align: center;">
+Rishav
+</h1>
+<h3><a href="#">Srivastava</a></h3>
+<ul>
+	<li>Audi</li>
+	<li>BMW</li>
+	<li>Hero</li>
+	<li>Honda</li>
+</ul>
+<table>
+	<tr>
+		<th>Phone Make</th>	
+		<th>Model</th>	
+		<th>Manufacture</th>	
+	</tr>
+	<tr>
+		<td>Apple</td>
+		<td>t-series</td>
+		<td>2012</td>
+	</tr>
+	<tr>
+		<td>Nokia</td>
+		<td>Ties</td>
+		<td>232</td>
+	</tr>
+	<tr>
+		<td>Motorola</td>
+		<td>Heries</td>
+		<td>2213</td>
+	</tr>
+	<tr>
+		<td>Nokia</td>
+		<td>Ties</td>
+		<td>232</td>
+	</tr>
+	<tr>
+		<td>Motorola</td>
+		<td>Heries</td>
+		<td>2213</td>
+	</tr>
+</table>
+<p>Type your name:<input><button type="submit">Submit</button></p>
+</body>
+<script>
+	$(function() {
+		$("*").css("font-size",'25px');
+		$("[href]").css("color","red");
+		$("li:first-child,li:last-child").css("background-color","pink");
+		$("tr:even").css("background-color","green");
+		$("tr:odd").css("background-color","#811c90");
+		$(':input').css('background-color','#1da492');
+		$(':submit').css('background-color','#7979eb');
+	});
+</script>
+</html>

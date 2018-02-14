@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Responce</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0">
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+<p>
+	Hack the world
+</p>
+<p>
+What to hack
+</p>
+<p>
+NOthing to hack
+</p>
+<p>
+What can i do
+</p>
+</body>
+<script>
+	$(function() {
+		$("p").click(function(){
+			$(this).css("background-color","blue");
+		});
+	});
+</script>
+</html>
