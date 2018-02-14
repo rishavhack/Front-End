@@ -7,31 +7,30 @@
 	<script src="jquery.min.js"></script>
 </head>
 <body>
-<p>
+<p id="hack">
 	Hack the world
 </p>
 	<input type="text" name="">
-<p>
+<p id="hack1">
 What to hack
 </p>
 <p>
 NOthing to hack
 </p>
-<input type="text" name="">
+<div>Enter your name:<input type="text" name=""></div>
 <p>
 What can i do
 </p>
+<button id="hackWorld">Click to change hack the world</button>
+<button id="hacker">Click to change html in input</button>
 </body>
 <script>
 	$(function() {
-		$("p").click(function(){
-			$(this).css("background-color","blue");
+		$("#hackWorld").click(function(){
+			$("#hack").html("<h2>Rishav</h2>")
 		});
-		$("input").focus(function(){
-			$(this).css("background-color","green");
-		});
-		$("input").keyup(function(){
-			$(this).css("background-color","red");
+		$("#hacker").click(function(){
+			$("input").val("Rishav");
 		});
 	});
 </script>
