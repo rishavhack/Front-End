@@ -21,8 +21,10 @@ NOthing to hack
 <p>
 What can i do
 </p>
+<p><a href="#" title="MicroSoft" id="MicroSoft">MicroSoft Link</a></p>
 <button id="hackWorld">Click to change hack the world</button>
 <button id="hacker">Click to change html in input</button>
+<button id="google">Change Microsoft to google</button>
 </body>
 <script>
 	$(function() {
@@ -31,6 +33,11 @@ What can i do
 		});
 		$("#hacker").click(function(){
 			$("input").val("Rishav");
+		});
+		$("#google").click(function(){
+			$("#MicroSoft").attr({
+			"href":"http://www.google.com","title":"Google"	
+			})
 		});
 	});
 </script>
