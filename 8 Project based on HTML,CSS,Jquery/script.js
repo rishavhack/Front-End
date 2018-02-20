@@ -1,6 +1,7 @@
 var playing = false;
 var score;
 var trailsLeft;
+var fruits = ['1','2','3','4','5','6','7','8','9'];
 $(function(){
 	$("#startreset").click(function(){
 		if(playing==true)
@@ -34,8 +35,31 @@ function addHearts()
 
 function startAction()
 {
-	
+	$("#fruit1").show();
+	chooseFruit(); //choose a random fruit
+	$("#fruit1").css({'left' :Math.round(475*Math.random()),'top':-50});
 }
+
+
+function chooseFruit()
+{
+	$("#fruit1").attr('src' , 'images/'+fruits[Math.round(8*Math.random())]+'.png')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*var playing = false;
 var score = 0;

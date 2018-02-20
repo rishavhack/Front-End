@@ -43,7 +43,7 @@ html
     box-shadow: 0px 4px #3b59ff;
     display: none;
 }
-#question
+#fruitsContainer
 {
     background-color: white;
 	width: 600px;
@@ -54,6 +54,8 @@ html
     font-family: cursive;
     border-radius: 20px;
     box-shadow: 0px 4px green;
+    position: relative;
+    overflow: hidden;
 }
 #instruction
 {
@@ -166,4 +168,9 @@ html
     top: 140px;
     left: 123px;
     display: none;
+}
+.fruit
+{
+    display: none;
+    position: absolute;
 }
