@@ -1,4 +1,38 @@
 var playing = false;
+var score;
+var trailsLeft;
+$(function(){
+	$("#startreset").click(function(){
+		if(playing==true)
+		{
+			location.reload();
+		}
+		else
+		{
+			playing=true;
+			score=0;
+			$("#scoreValue").html(score);
+
+			$("#trailsLeft").show();
+			trailsLeft=3;
+			addHearts();
+			
+		}
+	});
+});
+
+
+function addHearts()
+{
+	for(i=0;i<trailsLeft;i++)
+			{
+				$("#trailsLeft").append("X")
+			}
+}
+
+
+
+/*var playing = false;
 var score = 0;
 var action;
 var timeremaining;
@@ -93,4 +127,4 @@ document.getElementById('box'+i).onclick=function()
 		}
 	}
 }
-}
+}*/
