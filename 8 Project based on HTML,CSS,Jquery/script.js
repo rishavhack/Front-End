@@ -16,7 +16,9 @@ $(function(){
 			$("#trailsLeft").show();
 			trailsLeft=3;
 			addHearts();
+			$("#startreset").html("Reset Game")
 			
+			startAction();
 		}
 	});
 });
@@ -26,11 +28,14 @@ function addHearts()
 {
 	for(i=0;i<trailsLeft;i++)
 			{
-				$("#trailsLeft").append("X")
+				$("#trailsLeft").append('<img src="images/heart.png" class="life">');
 			}
 }
 
-
+function startAction()
+{
+	
+}
 
 /*var playing = false;
 var score = 0;
