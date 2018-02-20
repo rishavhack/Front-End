@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resizable</title>
+	<script src="jquery.min.js"></script>
+	<link rel="stylesheet" href="jquery-ui.css">
+	<script src="jquery-ui.min.js"></script>
+	<style>
+		.bluebox
+		{
+			background-color: blue;
+			height: 600px;
+		}
+	</style>
+</head>
+<body>
+<div id="facebook" class="bluebox ui-corner-all">
+	<h3>Section 1</h3>
+		<div>
+			<p>Content 1</p>
+			<p>Content 1</p>
+			<p>Content 1</p>
+			<p>Content 1</p>
+			<p>Content 1</p>
+		</div>
+	<h3>Section 2</h3>
+		<div><p>Content 2</p></div>
+	<h3>Section 3</h3>
+		<div><p>Content 3</p></div>
+</div>
+</body>
+<script>
+	$(function () {
+		$("#facebook").accordion({
+			collapsible:true,
+			icons:{
+				header:"ui-icon-circle-arrow-e",
+				activeHeader:"ui-icon-circle-arrow-s"
+			},
+		});
+	});
+</script>
+</html>
