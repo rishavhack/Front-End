@@ -1,0 +1,11 @@
+.jumbotron
+{
+	background: url("nature.jpg") center center;
+	height: 600px;
+	background-size: cover;
+}
+.logo
+{
+	width: 75px;
+	height: 75px;
+}
