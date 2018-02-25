@@ -25,5 +25,30 @@ body
 	border-bottom: 1px solid #00FFB8;
 	padding-bottom:9px;
 	cursor: pointer; 
-
+}
+.jumbotron
+{
+	background-color: transparent;
+	color: #fff;
+	text-align: center;
+	margin:0;
+	padding: 10px;
+	letter-spacing: 2.5px;
+}
+.bodyimage
+{
+	height: 100px;
+}
+.col-md-4
+{
+	text-align: center;
+	color: #fff;
+}
+.container
+{
+	max-width: 1000px;
+}
+.icons p
+{
+	font-size: 15px;
 }
