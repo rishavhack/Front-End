@@ -52,3 +52,39 @@ body
 {
 	font-size: 15px;
 }
+.contact
+{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+.btn
+{
+	background-color: rgba(0,255,184,0.5);
+	border:none;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	padding:10px 70px;
+	letter-spacing: 1.3px;
+}
+.btn:hover
+{
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	border:none;
+}
+.footer
+{
+	background-color: rgba(0,0,0,0.5);
+	color: grey;
+	font-size: 15px;
+	padding: 10px 0;
+}
+@media (max-width: 768px)
+{
+	.bodyimage
+	{
+		height: 70px;
+	}
+}
