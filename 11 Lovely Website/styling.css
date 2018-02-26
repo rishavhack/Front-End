@@ -1,0 +1,6 @@
+video#bgvideo
+{
+	position: fixed;
+	min-height: 100%;
+	min-width: 100%
+}
