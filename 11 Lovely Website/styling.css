@@ -1,6 +1,126 @@
+body
+{
+	font-family: 'Volkorn',sans-serif;
+}
 video#bgvideo
 {
 	position: fixed;
 	min-height: 100%;
-	min-width: 100%
+	min-width: 100%;
+	z-index:-100;
+}
+.navbar-custom {
+	font-size: 18px;
+  background-color: #ff5c00;
+  border-color: #de5000;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ff7d33), to(#ff5c00));
+  background-image: -webkit-linear-gradient(top, #ff7d33, 0%, #ff5c00, 100%);
+  background-image: -moz-linear-gradient(top, #ff7d33 0%, #ff5c00 100%);
+  background-image: linear-gradient(to bottom, #ff7d33 0%, #ff5c00 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff7d33', endColorstr='#ffff5c00', GradientType=0);
+}
+.navbar-custom .navbar-brand {
+  color: #fff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #fffb00;
+}
+.navbar-custom .navbar-nav > li:last-child > a {
+  border-right: 1px solid #de5000;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #fffb00;
+  border-left: 1px solid #de5000;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #0200ff;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #0200ff;
+  background-color: #de5000;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#de5000), to(#ff6712));
+  background-image: -webkit-linear-gradient(top, #de5000, 0%, #ff6712, 100%);
+  background-image: -moz-linear-gradient(top, #de5000 0%, #ff6712 100%);
+  background-image: linear-gradient(to bottom, #de5000 0%, #ff6712 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffde5000', endColorstr='#ffff6712', GradientType=0);
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #db4f00;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #0200ff;
+  border-bottom-color: #0200ff;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #de5000;
+  color: #0200ff;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: #0200ff;
+  border-bottom-color: #0200ff;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #fffb00;
+  border-bottom-color: #fffb00;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #fffb00;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #0200ff;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #0200ff;
+    background-color: #de5000;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #fffb00;
+}
+.navbar-custom .navbar-link:hover {
+  color: #0200ff;
 }
