@@ -9,6 +9,33 @@ video#bgvideo
 	min-width: 100%;
 	z-index:-100;
 }
+#home
+{
+	background-color: transparent;
+	color: white;
+	text-align: center;
+	padding-top: 15%;
+}
+#home h1
+{
+	margin-bottom: 30px;
+}
+#home h2
+{
+	margin-bottom: 50px;
+}
+#home .btn
+{
+	background-color: rgb(29,167,179);
+	color: white;
+	font-size: 20px;
+	padding: 8px 20px;
+	border-radius: 8px;
+}
+#home .btn:hover
+{
+	background-color: rgba(29,167,179,0.5);
+}
 .navbar-custom {
 	font-size: 18px;
   background-color: #ff5c00;
