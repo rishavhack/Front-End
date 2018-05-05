@@ -1,6 +1,8 @@
 var playing = false;
 var score;
 var trailsLeft;
+var step;
+var action;
 var fruits = ['1','2','3','4','5','6','7','8','9'];
 $(function(){
 	$("#startreset").click(function(){
@@ -27,6 +29,7 @@ $(function(){
 
 function addHearts()
 {
+	$("trailsLeft").empty();
 	for(i=0;i<trailsLeft;i++)
 			{
 				$("#trailsLeft").append('<img src="images/heart.png" class="life">');
@@ -38,8 +41,51 @@ function startAction()
 	$("#fruit1").show();
 	chooseFruit(); //choose a random fruit
 	$("#fruit1").css({'left' :Math.round(475*Math.random()),'top':-50});
-}
+	//random position
+		//generate a random step
+			step =1 + Math.round(5*Math.random());
+	//change the step
 
+	//move fruit down by one step every 10ms
+	action = setInterval(function(){
+		$("#fruit1").css('top',$("#fruit1").position().top + step)
+		
+		//Check if fruit is too low
+		if($("#fruit1").position().top>$("fruitsContainer").height())
+		{
+			//check if we have trails left
+			if(trailsLeft > 1)
+			{
+				$("#fruit1").show();
+				chooseFruit(); //choose a random fruit
+				$("#fruit1").css({'left' :Math.round(475*Math.random()),'top':-50});
+				//random position
+					//generate a random step
+				step =1 + Math.round(5*Math.random());
+	 			
+	 			//Reduce trails by 1
+	 			trailsLeft--;
+	 			//populate trailsLeft box
+	 			addHearts();
+			}
+			else //gameover
+			{
+				playing = false; //we are not playing anymore
+				$("#startreset").html("Start Game");
+				$("#gameover").show();
+				$("#gameover").html('<p>Game Over!</p><p>You score is '+ score +'</p>')
+				stopAction();
+			}
+		}
+	},10);
+	
+}
+//stop dropping fruits
+function stopAction()
+{
+	clearInterval(action);
+	$("#fruit1").hide();
+}
 
 function chooseFruit()
 {
