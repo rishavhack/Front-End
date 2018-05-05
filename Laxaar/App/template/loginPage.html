@@ -1,0 +1,50 @@
+<div ng-controller="loginCtrl">
+	<div class="row">
+		<div class="col-md-6">
+			<button type="button" class="btn btn-primary btn-block" ng-click="toggleTab(1)">Log In</button>
+		</div>
+		<div class="col-md-6">
+			<button type="button" class="btn btn-success btn-block" ng-click="toggleTab(0)">Sig Up</button>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div ng-if="toggleValue">
+		<form name="myForm">
+			<div class="form-group">
+			   <label for="email">Email address:</label>
+			   <input type="email" class="form-control" name="email" ng-model="signInValue.email" required>
+			   <span ng-show="myForm.email.$dirty && myForm.email.$error.required">Required</span>
+    		   <span ng-show="myForm.email.$dirty && myForm.email.$error.email">Not an email</span>
+			</div>
+			<div class="form-group">
+			   <label for="pwd">Password:</label>
+			   <input type="password" class="form-control" name="pwd" ng-model="signInValue.password" required>
+			   <span ng-show="myForm.pwd.$dirty && myForm1.pwd.$error.required">Required</span>
+			</div>
+			<button type="submit" class="btn btn-default" ng-disabled="myForm.$invalid" ng-click="logIn()">LogIn</button>
+		</form>
+	</div>
+	<div ng-if="!toggleValue">
+		<form name="myForm1">
+			<div class="form-group">
+			   <label for="text">UserName:</label>
+			   <input type="text" class="form-control" name="UserName" ng-model="signUpValue.userName" required>
+			   <span ng-show="myForm1.UserName.$dirty && myForm1.UserName.$error.required">Required</span>
+			</div>
+			<div class="form-group">
+			   <label for="email">Email address:</label>
+			   <input type="email" class="form-control" name="email" ng-model="signUpValue.email" require>
+			   <span ng-show="myForm1.email.$dirty && myForm1.email.$error.required">Required</span>
+    		   <span ng-show="myForm1.email.$dirty && myForm1.email.$error.email">Not an email</span>
+			</div>
+			<div class="form-group">
+			   <label for="pwd">Password:</label>
+			   <input type="password" class="form-control" name="pwd" ng-model="signUpValue.password" required>
+			   <span ng-show="myForm1.pwd.$dirty && myForm1.pwd.$error.required">Required</span>
+			</div>
+			<button type="submit" ng-disabled="myForm1.$invalid" class="btn btn-default" ng-click="signUp()">SignUp</button>
+		</form>
+		
+	</div>
+</div>
