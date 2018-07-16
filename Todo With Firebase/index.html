@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="laxaar">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Laxaar's Notes</title>
+	<script src="script/angular.min.js"></script>
+	<script src="script/angular-route.js"></script>
+	<script src="script/app.js"></script>
+	<link rel="stylesheet" href="CSS/myStyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCLZVdUTB7u7Wkl9d3YEgv93lrFEm4oS6g",
+	    authDomain: "chatapp-5dd9b.firebaseapp.com",
+	    databaseURL: "https://chatapp-5dd9b.firebaseio.com",
+	    projectId: "chatapp-5dd9b",
+	    storageBucket: "chatapp-5dd9b.appspot.com",
+	    messagingSenderId: "955513121255"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="script/angularfire.min.js"></script>
+</head>
+<body class="container">
+	<div class="col-md-12 text-center bg-primary header" style="background-color: orange">
+        <h1>Laxaar's Note App</h1>
+	</div>
+
+	<div ng-view>
+    </div>
+
+</body>
+</html>

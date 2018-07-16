@@ -1,0 +1,23 @@
+
+<div ng-controller="homeCtrl">
+<h2>List of Title of Note</h2>
+<div class="row">
+	<div class="col-md-6">
+		<input type="text" ng-model="titles" class="form-control">
+	</div>
+	<div class="col-md-3">
+		<button class="btn btn-default" ng-click="addTitle(titles)" ng-if="showButton">Add Title of Note</button> 
+		<button class="btn btn-default" ng-click="update(titles)" ng-if="!showButton">Update Title</button> 
+
+	</div>
+</div>
+<br>
+<br>
+	<ul class="list-group">
+	  <li class="list-group-item" ng-repeat ="title in titleOfnote track by $index">
+	  	<a href="#!/task/{{title.$value}}">{{title.$value}}</a>
+	  	<button class="icons" ng-click="editTitle($index)"><span class="glyphicon glyphicon-pencil" style="color:red;"></span></button>
+	  	<button class="icons" ng-click="deleteTitle($index)"><span class="glyphicon glyphicon-remove" style="color:green;"></span></button>
+	  </li>
+	</ul>
+</div>

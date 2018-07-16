@@ -1,0 +1,15 @@
+<div ng-controller="taskCtrl">
+	<h3>Title Name--{{titleName}}</h3>
+	 <div class="form-group">
+      <label for="comment">Note:</label>
+      <textarea class="form-control" rows="5" ng-model="noteDetails"></textarea>
+    </div>
+    <button class="btn btn-default" ng-click="addNote(noteDetails)" ng-if="showButton">Add Notes</button>
+    <button class="btn btn-default" ng-click="update(noteDetails)" ng-if="!showButton">Update Notes</button>
+
+    <div class="noteList" ng-repeat ="title in noteTasks track by $index">
+    	<p>{{title.$value}}</p>
+    	<button class="icons" ng-click="editTitle($index)"><span class="glyphicon glyphicon-pencil" style="color:red;"></span></button>
+	  	<button class="icons" ng-click="deleteTitle($index)"><span class="glyphicon glyphicon-remove" style="color:green;"></span></button>
+    </div>
+</div>
