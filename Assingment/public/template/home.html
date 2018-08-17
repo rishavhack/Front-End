@@ -1,0 +1,84 @@
+
+<div ng-controller="homeCtrl" class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<md-button class="md-raised md-primary buttonSize" md-ripple-size="full" ng-click="toggle(0)">Sign In</md-button>
+		</div>
+		<div class="col-sm-6">
+			<md-button class="md-raised md-primary buttonSize" md-ripple-size="full" ng-click="toggle(1)">Sign Up</md-button>
+		</div>
+	</div>
+	<div class="container">
+		 <md-content layout-padding>
+		    <form name="userForm" ng-if="formValue">
+		    	 <md-input-container class="md-block">
+			          <label>User Name</label>
+			          <input required name="userName" ng-model="signUp.userName">
+			          <div ng-messages="userForm.userName.$error">
+			            <div ng-message="required">This is required.</div>
+			          </div>
+        		</md-input-container>
+		        <md-input-container class="md-block">
+			        <label>Email</label>
+			        <input required type="email" name="Email" ng-model="signUp.Email"
+			               minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+
+			        <div ng-messages="userForm.Email.$error" role="alert">
+			          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+			            Your email must be between 10 and 100 characters long and look like an e-mail address.
+			          </div>
+			        </div>
+			      </md-input-container>
+			      <md-input-container class="md-block">
+			        <label>Password</label>
+			        <input required type="password" name="password" ng-model="signUp.password"
+			               minlength="5" maxlength="100" />
+
+			        <div ng-messages="userForm.password.$error" role="alert">
+			          <div ng-message-exp="['required', 'minlength', 'maxlength',]">
+			            Your password must be between 5 and 100 characters long.
+			          </div>
+			        </div>
+			      </md-input-container>
+			      <div>
+			        <md-button ng-disabled="userForm.$invalid" class="md-raised md-primary buttonSize" md-ripple-size="full" ng-click="signUpDetails()">Sign Up</md-button>
+			      </div>
+			      <div>
+			      	<md-button class="md-raised md-warn buttonSize" md-ripple-size="full" ng-click="googleLogin()">Login with Google  <span><i class="fa fa-google-plus"></i></span></md-button>
+				  </div>
+		    </form>
+		    <form name="userForm1" ng-if="!formValue">
+		        <md-input-container class="md-block" >
+			        <label>Email</label>
+			        <input required type="email" name="Email" ng-model="signIn.Email"
+			               minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+
+			        <div ng-messages="userForm1.Email.$error" role="alert">
+			          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+			            Your email must be between 10 and 100 characters long and look like an e-mail address.
+			          </div>
+			        </div>
+			      </md-input-container>
+			      <md-input-container class="md-block">
+			        <label>Password</label>
+			        <input required type="password" name="password" ng-model="signIn.password"
+			               minlength="5" maxlength="100" />
+
+			        <div ng-messages="userForm1.password.$error" role="alert">
+			          <div ng-message-exp="['required', 'minlength', 'maxlength',]">
+			            Your password must be between 5 and 100 characters long.
+			          </div>
+			        </div>
+			      </md-input-container>
+			      <div>
+			        <md-button ng-disabled="userForm1.$invalid" class="md-raised md-primary buttonSize" md-ripple-size="full" ng-click="signInDetails()">Sign In</md-button>
+			      </div>
+			      <div>
+			        <md-button class="md-raised md-warn buttonSize" md-ripple-size="full" ng-click="googleLogin()">LogIn with Google  <span><i class="fa fa-google-plus"></i></span></md-button>
+			      </div>
+		    </form>
+		</md-content>
+	</div>
+	<div class="loading-gif" layout="row" layout-sm="column" layout-align="space-around" ng-if="loaderValue">
+      <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+</div>

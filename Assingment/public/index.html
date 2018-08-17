@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="appTask">
+<head>
+	<title>Tasks</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/angular-material.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script/angular.min.js"></script>
+	<script src="script/angular-route.js"></script>
+	<script src="script/jquery.min.js"></script>
+	<script src="script/bootstrap.min.js"></script>
+
+	<script src="script/app.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyANtfooIP0oD1tpvXNYnPFHpcPC6gtXt-8",
+	    authDomain: "tasks-345aa.firebaseapp.com",
+	    databaseURL: "https://tasks-345aa.firebaseio.com",
+	    projectId: "tasks-345aa",
+	    storageBucket: "tasks-345aa.appspot.com",
+	    messagingSenderId: "549246614256"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="script/angularfire.min.js"></script>
+</head>
+<body>
+<ng-view></ng-view>
+	<script src="script/angular-animate.min.js"></script>
+	<script src="script/angular-aria.min.js"></script>
+	<script src="script/angular-messages.min.js"></script>
+	<script src="script/angular-material.min.js"></script>
+</body>
+</html>

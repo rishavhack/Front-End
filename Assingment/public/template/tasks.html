@@ -1,0 +1,22 @@
+<div ng-controller="taskCtrl" class="container">
+	<form class="notes">
+      <input type="text" name="Title" class="form-control" placeholder="Title" ng-model="obj.title">
+      <textarea name="contain" class="form-control"  placeholder="Text goes here...." ng-model="obj.detail"></textarea>
+      <md-button class="md-raised md-primary" ng-click="add()" ng-if="toggleValue">Add</md-button>
+      <md-button class="md-raised md-primary" ng-click="update()" ng-if="!toggleValue">Update</md-button>
+  </form>
+  <br>
+   <md-card style="height: 130px;" md-theme="dark-grey" md-theme-watch ng-repeat="value in listValue track by $index">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{value.title}}</span>
+            <span class="md-subhead">{{value.detail}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button class="md-raised md-primary" ng-click="edit($index)">Edit <span><i class="fa fa-edit"></i></span></md-button>
+          <md-button class="md-raised md-warn" ng-click="delete($index)">Delete <span><i class="fa fa-remove"></i></span></md-button>
+        </md-card-actions>
+      </md-card>
+
+</div>

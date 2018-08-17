@@ -1,0 +1,33 @@
+body
+{
+	background-color: ghostwhite;
+    position: relative;
+}
+.buttonSize{
+	width: 100%
+}
+.md-button {    
+    text-transform: capitalize !important;/*For Lower case use lowercase*/
+}
+.notes{
+	position: relative;
+    max-width: 100%;
+    margin: 0 auto 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px #ccc;
+}
+.form-control{
+	border: none !important;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+
+.loading-gif {
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -50px 0px 0px -50px;
+}
